@@ -9,7 +9,7 @@ const src = path.resolve(__dirname, "src");
 
 // Mirrors tsconfig.app.json paths so bundler matches TypeScript
 const fsdAliases: Record<string, string> = {
-  "@/pages": path.join(src, "pagesLayer"),
+  "@/pages": path.join(src, "pages"),
   "@/widgets": path.join(src, "widgets"),
   "@/stores": path.join(src, "stores"),
   "@/entities": path.join(src, "entities"),

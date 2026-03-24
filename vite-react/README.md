@@ -1,6 +1,6 @@
 # vite-react
 
-Vite + React 19 + TypeScript. Структура слоёв и алиасы совпадают с шаблоном [`next-tailwind`](../next-tailwind/): **app** (тонкая оболочка), **appLayer**, **pagesLayer**, **widgets / features / entities / stores**, **shared**. Стили — Tailwind CSS v4, тема и подход shadcn/ui, как в Next-шаблоне (`globals.css`, `Button` в `shared/ui`).
+Vite + React 19 + TypeScript. Структура слоёв и алиасы совпадают с шаблоном [`next-tailwind`](../next-tailwind/): **`app`** (оболочка, провайдеры, стили, точка входа страницы), **`pages`** (композиция экранов), **widgets / features / entities / stores**, **shared**. Стили — Tailwind CSS v4, тема и подход shadcn/ui, как в Next-шаблоне (`globals.css`, `Button` в `shared/ui`).
 
 ## Требования
 
@@ -16,21 +16,21 @@ npm run dev
 
 Открой URL из вывода терминала (часто [http://localhost:5173](http://localhost:5173)).
 
-## Точка входа и маршрутизация
+## Точка входа и слои
 
 | Путь | Назначение |
 |------|------------|
 | `src/main.tsx` | Монтирование дерева, импорт шрифтов и `globals.css` |
-| `src/app/RootLayout.tsx` | Аналог корневого `layout.tsx`: оболочка страницы + `AppProviders` |
-| `src/app/Page.tsx` | Аналог `page.tsx`: только подключает экран из `pagesLayer` |
-| `src/appLayer` | Провайдеры, глобальные стили |
-| `src/pagesLayer` | Композиция экранов (импорт `@/pages/...`) |
+| `src/app/RootLayout.tsx` | Аналог корневого `layout.tsx`: оболочка + `AppProviders` |
+| `src/app/Page.tsx` | Аналог `page.tsx`: подключает экран из `pages` |
+| `src/app/providers`, `src/app/styles` | Провайдеры и глобальные стили |
+| `src/pages` | Композиция экранов (импорт `@/pages/...`) |
 | `src/widgets`, `src/features`, `src/entities`, `src/stores` | Слои FSD — по мере роста проекта |
 | `src/shared` | UI (`ui`), утилиты (`lib`), хуки |
 
-Алиасы `@/pages/*` → `src/pagesLayer/*` настроены в `tsconfig.app.json` и в `vite.config.ts` (оба должны совпадать).
+Алиас `@/pages/*` → `src/pages/*` задан в `tsconfig.app.json` и в `vite.config.ts` (должны совпадать). В шаблоне Next слой экранов лежит в `src/pagesLayer` с тем же алиасом `@/pages/...`.
 
-Правила импортов и стиль кода — в `eslint.config.mjs` (в т.ч. `simple-import-sort` по слоям).
+Правила импортов — в `eslint.config.mjs` (в т.ч. `simple-import-sort` по слоям).
 
 ## Скрипты
 

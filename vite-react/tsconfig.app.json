@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/pages/*": ["./src/pagesLayer/*"],
+      "@/pages/*": ["./src/pages/*"],
       "@/widgets/*": ["./src/widgets/*"],
       "@/stores/*": ["./src/stores/*"],
       "@/entities/*": ["./src/entities/*"],

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { AppProviders } from "@/appLayer/providers";
+import { AppProviders } from "@/app/providers";
 
 export function RootLayout({ children }: { children: ReactNode }) {
   return (

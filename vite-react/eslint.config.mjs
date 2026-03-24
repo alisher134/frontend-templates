@@ -14,7 +14,7 @@ const fsdImportGroups = [
   ['^react$', '^react-dom$', '^react/', '^react-dom/'],
   ['^vite', '^@vitejs/'],
   ['^@?\\w'],
-  ['^@/appLayer'],
+  ['^@/app/providers', '^@/app/styles'],
   ['^@/shared/lib'],
   ['^@/shared/config', '^@/shared/constants'],
   ['^@/shared/hooks', '^@/shared/api'],

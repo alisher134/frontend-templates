@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import { Page } from "@/app/Page";
 import { RootLayout } from "@/app/RootLayout";
 
-import "@/appLayer/styles/globals.css";
+import "@/app/styles/globals.css";
 
 import "@fontsource-variable/geist";
 import "@fontsource-variable/geist-mono";
