@@ -7,7 +7,7 @@
 | Папка | Стек | Зачем |
 |--------|------|--------|
 | [`next-tailwind/`](./next-tailwind/) | Next.js (App Router), TypeScript, Tailwind v4, shadcn/ui, FSD-скелет, Docker `standalone` | База под приложение с нормальной структурой и UI-китом |
-| [`vite-react/`](./vite-react/) | Vite, React 19, TypeScript, ESLint | Лёгкий SPA без лишней архитектуры — дефолтная структура Vite |
+| [`vite-react/`](./vite-react/) | Vite, React 19, TypeScript, Tailwind v4, shadcn-стек, FSD как в `next-tailwind` | SPA с той же раскладкой слоёв и алиасами, что и Next-шаблон |
 
 ### Как пользоваться
 

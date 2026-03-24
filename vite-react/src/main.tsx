@@ -1,10 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
-createRoot(document.getElementById('root')!).render(
+import { Page } from "@/app/Page";
+import { RootLayout } from "@/app/RootLayout";
+
+import "@/appLayer/styles/globals.css";
+
+import "@fontsource-variable/geist";
+import "@fontsource-variable/geist-mono";
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <RootLayout>
+      <Page />
+    </RootLayout>
   </StrictMode>,
-)
+);
