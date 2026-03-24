@@ -7,10 +7,10 @@
 | Папка | Стек | Зачем |
 |--------|------|--------|
 | [`next-tailwind/`](./next-tailwind/) | Next.js (App Router), TypeScript, Tailwind v4, shadcn/ui, FSD-скелет, Docker `standalone` | База под приложение с нормальной структурой и UI-китом |
-| [`vite-react/`](./vite-react/) | Vite, React 19, TypeScript, Tailwind v4, shadcn-стек, FSD как в `next-tailwind` | SPA с той же раскладкой слоёв и алиасами, что и Next-шаблон |
+| [`react-tailwind/`](./react-tailwind/) | Vite, React 19, TypeScript, Tailwind v4, shadcn-стек, FSD как в `next-tailwind` | SPA с той же раскладкой слоёв и алиасами, что и Next-шаблон |
 
 ### Как пользоваться
 
 1. Склонируй репозиторий (или скачай нужную папку).
-2. Перейди в каталог шаблона, например `cd next-tailwind` или `cd vite-react`.
+2. Перейди в каталог шаблона, например `cd next-tailwind` или `cd react-tailwind`.
 3. Следуй инструкциям в `README.md` внутри этой папки (`npm ci`, `npm run dev` и т.д.).

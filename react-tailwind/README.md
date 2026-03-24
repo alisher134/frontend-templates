@@ -1,4 +1,4 @@
-# vite-react
+# react-tailwind
 
 Vite + React 19 + TypeScript. Структура слоёв и алиасы совпадают с шаблоном [`next-tailwind`](../next-tailwind/): **`app`** (оболочка, провайдеры, стили, точка входа страницы), **`pages`** (композиция экранов), **widgets / features / entities / stores**, **shared**. Стили — Tailwind CSS v4, тема и подход shadcn/ui, как в Next-шаблоне (`globals.css`, `Button` в `shared/ui`).
 
