@@ -25,7 +25,7 @@ npm run dev
 | `src/app/Page.tsx` | Аналог `page.tsx`: подключает экран из `pages` |
 | `src/app/providers`, `src/app/styles` | Провайдеры и глобальные стили |
 | `src/pages` | Композиция экранов (импорт `@/pages/...`) |
-| `src/widgets`, `src/features`, `src/entities`, `src/stores` | Слои FSD — по мере роста проекта |
+| `src/widgets`, `src/features`, `src/entities`, `src/stores` | Слои FSD — каталоги с `.gitkeep`, слайсы добавляйте внутри |
 | `src/shared` | UI (`ui`), утилиты (`lib`), хуки |
 
 Алиас `@/pages/*` → `src/pages/*` задан в `tsconfig.app.json` и в `vite.config.ts` (должны совпадать). В шаблоне Next слой экранов лежит в `src/pagesLayer` с тем же алиасом `@/pages/...`.

@@ -24,7 +24,7 @@ npm run dev
 | `src/app` | Маршруты App Router: только страницы и layout, без тяжёлой разметки экранов |
 | `src/appLayer` | Провайдеры, глобальные стили |
 | `src/pagesLayer` | Композиция экранов (импорт `@/pages/...`) |
-| `src/widgets`, `src/features`, `src/entities`, `src/stores` | Слои FSD — добавляйте по мере роста проекта (алиасы уже в `tsconfig.json`) |
+| `src/widgets`, `src/features`, `src/entities`, `src/stores` | Слои FSD — каталоги с `.gitkeep`, слайсы добавляйте внутри (алиасы в `tsconfig.json`) |
 | `src/shared` | Переиспользуемый UI (`ui`), утилиты (`lib`), хуки, API-клиенты |
 
 Маршрут подключает экран через короткий файл-«провод», например `src/app/page.tsx` рендерит компонент из `src/pagesLayer`.
