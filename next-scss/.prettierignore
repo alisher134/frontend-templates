@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+
+# next.js
+.next
+out
+
+# build
+build
+dist
+
+# caches
+*.tsbuildinfo
+
+# generated
+next-env.d.ts
+
+# lockfiles
+package-lock.json
+
+# styles
+**/*.css
+**/*.scss
+
+# env (often secrets / local overrides)
+.env*
